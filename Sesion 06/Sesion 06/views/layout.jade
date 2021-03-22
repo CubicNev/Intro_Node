@@ -1,0 +1,20 @@
+doctype html
+html(lang="es")
+    head
+        title Ejemplo de Layout
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="/css/Style.css", rel="stylesheet")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet")   
+    body
+        center
+            br
+            h1 Curso Node JS
+            hr
+            br
+            block content
+            br
+            hr
+            div(class="btn-group btn-group-sm")
+                a(type="button" class="btn btn-success" href="/") Inicio
+                a(type="button" class="btn btn-danger" href="/login") Login

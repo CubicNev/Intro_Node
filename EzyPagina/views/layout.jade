@@ -1,0 +1,32 @@
+doctype html
+
+html(lang="es")
+
+    head
+        title Bienvenido a Node
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="/css/Style.css", rel="stylesheet")
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet") 
+        link(rel="icon" type="image/png" href="/images/nuclear.png") 
+    body(class=pagina)
+        header
+            nav(class="navbar navbar-dark bg-dark")
+                a(class="navbar-brand" href="/")
+                    img(src="/images/logo_node.svg", width="30", height="30", alt="logo")
+                            
+                ul(class="nav justify-content-end")
+                    li(class="nav-item")
+                        a(class="nav-link text-white", href="/datos") Datos
+                    li(class="nav-item")
+                        a(class="nav-link text-white", href="/registro") Registro
+                    li(class="nav-item")
+                        a(class="nav-link text-white", href="/login") Login
+
+        //Aqui va a cambiar el contenido
+        block content   
+
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+            

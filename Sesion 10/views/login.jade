@@ -1,0 +1,13 @@
+extends ./Layout_Index.jade
+block content
+    h2 Inicio de Sesión
+    form(action="/sign", method="POST")
+        center
+            div(class="form-group")
+                label(for="Email") Email: 
+                input(type="text", name="Email", id="Email", class="form-control texto")
+            div(class="form-group")
+                label(for="Password") Contraseña: 
+                input(type="password", name="Password", id="Password", class="form-control texto")
+            div
+                input(type="submit", value="Entrar", class="btn btn-danger")

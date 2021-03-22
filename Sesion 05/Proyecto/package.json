@@ -1,0 +1,15 @@
+{
+  "name": "clase5",
+  "version": "1.0.0",
+  "description": "uwu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jave": "^0.2.0"
+  }
+}

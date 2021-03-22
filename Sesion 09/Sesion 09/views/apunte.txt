@@ -1,0 +1,24 @@
+Las sessiones pueden basarse en:
+    -IP
+    -Navegadores
+    -Tiempo
+Informacion semipermanente que se establce en un momento y finaliza
+cuando el desarrollador desee. Esta permite asociar informacion con usuarios individuales.
+
+La sesion es un codigo de acceso que se genera a traves de:
+    -Navegadores VARIA
+    -Llave (Propia del servidor) FIJA
+    -id del Usuario SIEMPRE DIFERENTE
+Para cambios sin compilar(sass pero para el servidor)
+    npm install -g nodemon
+    nodemon app.js
+
+Express-session: 
+Es una libreria generadora de de sessiones en nodemon
+
+npm install express-session --save
+
+La sesion se crea por navegador por default 
+
+Instalar express:
+npm install express --save

@@ -1,0 +1,17 @@
+extends ./layout.jade
+block content
+    --//console.log(pagina);
+    div(class="container text-center formulario")
+
+        form(action="/sign", method="POST", class="form-signin")
+
+            img(class="mb-4", src="/images/usuario.svg", alt="", width="72", height="72")
+            h1(class="h3 mb-3 font-weight-normal") Inicia Sesión
+
+            label(for="Nombre", class="sr-only") Nombre: 
+            input(type="text", name="Nombre", id="Nombre", class="form-control", placeholder="Nombre de usuario", required autofocus)
+
+            label(for="Password", class="sr-only") Contraseña: 
+            input(type="password", name="Password", id="Password", class="form-control", placeholder="Password", required)
+            
+            button(class="btn btn-lg bg-dark text-white btn-block", type="submit") Entrar

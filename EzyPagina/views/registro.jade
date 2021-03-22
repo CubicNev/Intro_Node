@@ -1,0 +1,45 @@
+extends ./layout.jade
+block content
+    --//console.log(pagina);
+    div(class="container mt-5 text-light")
+        h1 Registro
+        form(action="/register", method="POST", class="needs-validation")
+
+            div.form-row
+
+                div(class="form-group col-md-6")
+                    label(for="Nombre") Nombre:
+                    div(class="input-group")
+                        div(class="input-group-prepend")
+                            div(class="input-group-text") @
+                        input(type="text", name="Nombre", id="Nombre", class="form-control bg-light",  placeholder="Nombre", maxlength="15", required)
+                    div(class="valid-feedback") Valido
+                    div(class="invalid-feedback") Invalido
+
+                div(class="form-group col-md-6")
+                    label(for="Password") Contraseña: 
+                    input(type="password", name="Password", id="Password", class="form-control bg-light", placeholder="Contraseña", minlength="5", required)
+                    div(class="valid-feedback") Valido
+                    div(class="invalid-feedback") Invalido
+
+            div.form-row
+
+                div(class="form-group col-md-8")
+                    label(for="Email") Email:
+                    input(type="text", name="Email", id="Email", class="form-control bg-light",  placeholder="Email", required)
+                    div(class="valid-feedback") Valido
+                    div(class="invalid-feedback") Invalido
+                    
+                div(class="form-group col-md-4")
+                    label(for="Sexo") Sexo
+                    select(name="Sexo", id="Sexo", class="custom-select bg-light", required)
+                        option(value="") ...
+                        option(value="Hombre") Hombre
+                        option(value="Mujer") Mujer
+                        option(value="Helicóptero") Helicóptero
+                        option(value="Otro") Otro
+                    div(class="valid-feedback") Valido
+                    div(class="invalid-feedback") Invalido
+
+            button(type="submit", class="btn bg-dark text-white") Registrar
+    

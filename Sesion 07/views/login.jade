@@ -1,0 +1,12 @@
+extends ./layout.jade
+block content
+    form(action="/users", method="POST")
+        center
+            div(class="form-group")
+                label(for="Nombre") Nombre: 
+                input(type="text", name="Nombre", id="Nombre", class="form-control texto")
+            div(class="form-group")
+                label(for="Password") Contraseña: 
+                input(type="password", name="Password", id="Password", class="form-control texto")
+            div
+                input(type="submit", value="Registrar", class="btn btn-success")

@@ -1,0 +1,10 @@
+extends ./layout.jade
+block content
+    div(class="contenedor")
+            div(id="error_video")
+                video(poster="https://www.theuselesswebindex.com/static/videos/error.jpg" autobuffer autoplay loop)
+                    source(src="https://www.theuselesswebindex.com/static/videos/error.mp4" type="video/mp4")
+                    source(src="https://www.theuselesswebindex.com/static/videos/error.ogv" type="video/ogg")
+                    source(src="https://www.theuselesswebindex.com/static/videos/error.webm" type="video/webm")
+                div(class="colum_c")
+                    h3(class="titulo") Usuario no valido. Estas suricatas se encargaran de buscar tu usuario.
